@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="98x-Yc-jkh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ListeningVC-->
+        <scene sceneID="E8x-3x-v38">
+            <objects>
+                <viewController id="98x-Yc-jkh" customClass="ListeningVC" customModule="PTETraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h88-Hq-TOy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lvk-Vz-c2l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JKA-S5-M6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0PQ-nf-wjr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVO-u1-W0k">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                        <state key="normal" title="Fill in the Blanks"/>
+                                        <connections>
+                                            <segue destination="q0t-ZD-fcE" kind="show" id="bx1-wR-utz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drZ-yY-uIx">
+                                        <rect key="frame" x="0.0" y="69.5" width="375" height="69"/>
+                                        <state key="normal" title="Highlight Correct Summary"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPS-va-8wc">
+                                        <rect key="frame" x="0.0" y="138.5" width="375" height="69.5"/>
+                                        <state key="normal" title="Highlight Incorrect Words"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg9-bM-bkf">
+                                        <rect key="frame" x="0.0" y="208" width="375" height="69"/>
+                                        <state key="normal" title="Multiple-Choice, Choose Multiple Answers"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-NE-iE6">
+                                        <rect key="frame" x="0.0" y="277" width="375" height="69.5"/>
+                                        <state key="normal" title="Multiple-Choice, Choose Single Answer"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9C-AJ-BlE">
+                                        <rect key="frame" x="0.0" y="346.5" width="375" height="69"/>
+                                        <state key="normal" title="Select Missing Word"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng1-6F-xMo">
+                                        <rect key="frame" x="0.0" y="415.5" width="375" height="69.5"/>
+                                        <state key="normal" title="Summarize Spoken Text"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzw-hp-Sul">
+                                        <rect key="frame" x="0.0" y="485" width="375" height="69"/>
+                                        <state key="normal" title="Write From Dictation"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lvk-Vz-c2l" firstAttribute="top" secondItem="0PQ-nf-wjr" secondAttribute="bottom" id="LGG-gH-CMN"/>
+                            <constraint firstItem="0PQ-nf-wjr" firstAttribute="top" secondItem="h88-Hq-TOy" secondAttribute="bottom" id="h5v-Uj-tzS"/>
+                            <constraint firstItem="0PQ-nf-wjr" firstAttribute="leading" secondItem="JKA-S5-M6b" secondAttribute="leading" id="qwI-s0-iVj"/>
+                            <constraint firstAttribute="trailing" secondItem="0PQ-nf-wjr" secondAttribute="trailing" id="t21-pK-VAP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pms-xv-awp"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEg-xn-E7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="718"/>
+        </scene>
+        <!--Fill in the Blanks-->
+        <scene sceneID="d8R-P0-BMc">
+            <objects>
+                <collectionViewController id="q0t-ZD-fcE" customClass="FBCVC" customModule="PTETraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iTy-Ux-WV1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HKx-Dl-Rnl">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="labelCell" id="WLv-Po-3aZ" customClass="LabelCCell" customModule="PTETraining" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75T-qc-eA1">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="75T-qc-eA1" secondAttribute="trailing" id="3f4-OW-iDJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="75T-qc-eA1" secondAttribute="bottom" id="GXh-dP-3iz"/>
+                                    <constraint firstItem="75T-qc-eA1" firstAttribute="leading" secondItem="WLv-Po-3aZ" secondAttribute="leading" id="Jcl-F6-dmz"/>
+                                    <constraint firstItem="75T-qc-eA1" firstAttribute="top" secondItem="WLv-Po-3aZ" secondAttribute="top" id="qxk-PU-J41"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="label" destination="75T-qc-eA1" id="780-Km-IO0"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="q0t-ZD-fcE" id="0fc-aY-BiR"/>
+                            <outlet property="delegate" destination="q0t-ZD-fcE" id="OP8-Ur-7jL"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Fill in the Blanks" id="N7z-F9-eCr"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ph8-wx-dmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501.5999999999999" y="719.19040479760122"/>
+        </scene>
+    </scenes>
+</document>
